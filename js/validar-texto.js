@@ -2,19 +2,8 @@ var inputUno = document.querySelector("#input-texto");
 inputUno.addEventListener("input", function (event) {
     var textoEntrada = this.value;
     var textoMinusculas = "";
-    /**
-     * ¿Qué es indexOf()?
-     * Función que nos permite saber si existe un carácter en una posición, 
-     * su valor de retorno es la posición en el índice.
-     * Sintáxis:
-     * cadena.indexOf(valorBusqueda [, indiceDesde])
-     * */
-    var textoValidado = ""; //Primera variable que solo recibirá las coincidencias con la variable filtroGeneral
-    /**
-     * En la variable filtroGeneral se incluyen todos los caracteres admitidos
-     * Incluso si el usuario escribe una letra en mayúscula, esta función restringirá que se registre en el 
-     * campo de texto, y más adelante con la función toLowerCase() se convertirá en minúscula.
-     */
+    
+    var textoValidado = ""; 
     //Al final dejé un espacio para validar también los espacios en blanco.
     var filtroGeneral = "abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ ";
     /**
